@@ -1,0 +1,128 @@
+/************
+1. Header
+2. Main
+3. Footer
+*/
+
+ul li{
+	list-style: none;
+	display: inline-block;
+}
+
+ul {
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	background-color: #C2C9CC;
+}
+
+/*HEADER*/
+
+header {
+	height: 100px;
+	background-color: white;
+
+}
+
+#container {
+	box-sizing: border-box;
+	max-width: 1024px;
+	margin: auto;
+	background-color: white;
+	position: relative;
+}
+
+#logo {
+	float: left;
+}
+
+#search {
+	float: left;
+}
+
+#menu {
+	float: right;
+}
+
+/*MAIN*/
+
+
+#banner-image {
+	width: 100%;
+}
+
+#following {
+	background-color: green;
+	text-align: center;
+	padding: 5px 0 5px 0;
+
+}
+
+#following a {
+	color: white;
+}
+
+#profile {
+	float: left;
+}
+
+#profile-row {
+	margin: 0 25px 0 25px;
+	top: 250px;
+	width: 100%;
+	position: absolute;	
+}
+
+#profile-image, #following {
+	width: 180px;
+}
+
+#profile-name {
+	float: left;
+	padding-left: 20px;
+}
+
+#profile-info {
+	padding-top: 100px;
+
+}
+
+#profile-buttons {
+	float: right;
+
+}
+
+#content-section {
+	clear: both;
+	background-color: #EBF3F6;
+	padding: 0 0 25px 8px;
+	margin-top: 180px;
+}
+
+#photos-row img {
+	width: 170px;
+	margin: 25px 0 0 15px;
+	border: 5px solid white;
+}
+
+
+
+/*FOOTER*/
+
+#footer-links, #copyright {
+	font-size: 14px;
+}
+
+#footer-links {
+	float: left;
+	margin: 0px;
+}
+
+#copyright {
+	float: right;
+}
