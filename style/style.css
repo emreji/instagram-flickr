@@ -4,6 +4,14 @@
 3. Footer
 */
 
+html{
+	box-sizing: border-box;
+}
+
+*, *:after, *:before {
+	box-sizing: inherit;
+}
+
 ul li{
 	list-style: none;
 	display: inline-block;
@@ -11,6 +19,7 @@ ul li{
 
 ul {
 	padding: 0;
+	margin: 0;
 }
 
 a {
@@ -21,36 +30,51 @@ body {
 	background-color: #C2C9CC;
 }
 
-/*HEADER*/
-
-header {
-	height: 100px;
-	background-color: white;
-
-}
-
 #container {
-	box-sizing: border-box;
+	
 	max-width: 1024px;
 	margin: auto;
 	background-color: white;
 	position: relative;
+	font-family: Arial, Helvetica, sans-serif;
 }
+
+
+/*HEADER*/
+
+header {
+	margin: 0;
+	height: 90px;
+	background-color: white;
+	position: sticky;
+	width: 100%;
+	top: 0;
+}
+
 
 #logo {
 	float: left;
+	width: 60%;
 }
 
 #search {
 	float: left;
+	margin: 10px;
+	width: 200px;
+    height: 20px;
+    text-align: center;
 }
 
 #menu {
 	float: right;
+	margin: 10px 0 10px 250px;
 }
 
 /*MAIN*/
 
+main {
+	clear: both;
+}
 
 #banner-image {
 	width: 100%;
@@ -73,8 +97,8 @@ header {
 
 #profile-row {
 	margin: 0 25px 0 25px;
-	top: 250px;
-	width: 100%;
+	top: 350px;
+	width: 90%;
 	position: absolute;	
 }
 
@@ -92,9 +116,20 @@ header {
 
 }
 
-#profile-buttons {
+#profile-btn-group {
+	background-color: #E9EFF1;
 	float: right;
+	border-radius: 10px;
+	padding: 5px;
+}
 
+#profile-btn-group ul li {
+	padding: 10px;
+	border-right: 1px solid black;
+}
+
+#profile-btn-group ul li:last-child {
+	border-right: none;
 }
 
 #content-section {
@@ -114,8 +149,18 @@ header {
 
 /*FOOTER*/
 
+footer{
+	padding: 50px 5px 50px 5px;
+}
+
+#footer-links ul li{
+	padding-right: 10px;
+	font-weight: bold;
+}
+
 #footer-links, #copyright {
-	font-size: 14px;
+	font-size: 12px;
+	color: #1B1080;
 }
 
 #footer-links {
@@ -125,4 +170,6 @@ header {
 
 #copyright {
 	float: right;
+	font-weight: bold;
+	color: #C3C3C8;
 }
