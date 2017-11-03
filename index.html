@@ -5,16 +5,28 @@
 	<title>Instagram</title>
 	<link rel="icon" type="image/png" href="images/instagram-title.png">
 	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link rel="stylesheet" href="style/font-awesome.min.css">
+	<script type="text/javascript" src="js/user.js" defer></script>
+	<script type="text/javascript" src="js/script.js" defer></script>
 </head>
 <body>
-	<div id="container">
-		<header>
-			<ul>
-				<li><a href="#"><img src="images/instagram-logo.jpeg" id="logo"></a></li>
-				<li><input type="text" name="search" placeholder="Search" id="search"></li>
-				<li><a href="#" id="menu">Menu</a></li>
-			</ul>
-		</header>
+	<header>
+		<div class="container">
+			<div id="logo"><a href="#"><img src="images/instagram-logo.jpeg" ></a></div>
+			<div id="search">
+				<input type="text" class="searchInput" placeholder="&#xF002; Search" >
+			</div>
+			<div id="menu">
+				<ul>
+					<li><a href="#"><i class="fa fa-compass fa-2x" aria-hidden="true"></i></a></li>
+					<li><a href="#" ><i class="fa fa-heart-o fa-2x" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-user-o fa-2x" aria-hidden="true"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<div class="container">
+		
 		<main>
 			<section id="profile-section">
 				<div id="banner-image">
@@ -27,8 +39,11 @@
 					</div>
 					<div id="profile-info">
 						<div id="profile-name">
-							<h3>liza_sonny</h3>
-							<div><strong>Elizabeth Sonny </strong>Software Engineer</div>
+							<h3 id="user-name"></h3>
+							<div>
+								<strong><span id="name"> Elizabeth Sonny </span></strong>
+								<span id="description"> Software Engineer</span>
+							</div>
 						</div>
 						<div id="profile-btn-group">
 							<ul>

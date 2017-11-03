@@ -26,48 +26,68 @@ a {
 	text-decoration: none;
 }
 
-body {
-	background-color: #C2C9CC;
-}
-
-#container {
+.container {
 	
 	max-width: 1024px;
 	margin: auto;
 	background-color: white;
 	position: relative;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: sans-serif;
 }
 
 
 /*HEADER*/
 
 header {
-	margin: 0;
 	height: 90px;
 	background-color: white;
 	position: sticky;
 	width: 100%;
 	top: 0;
+	z-index: 1;
+	border-bottom: 1px solid #DBDBDF;
 }
 
+header img{
+	width: 300px;
+}
+
+header input[type=text]{
+	text-align: center;
+}
 
 #logo {
 	float: left;
-	width: 60%;
+	width: 40%;
 }
 
 #search {
 	float: left;
-	margin: 10px;
+	height: 50px;
+	width: 30%;
+	vertical-align: middle;
+    margin-top: 3%;
+}
+
+.searchInput {
+	font-family: "FontAwesome";
 	width: 200px;
-    height: 20px;
-    text-align: center;
+    height: 30px;
+    font-size: 14px;
 }
 
 #menu {
 	float: right;
-	margin: 10px 0 10px 250px;
+	width: 15%;
+	margin-top: 2%; 
+}
+
+#menu ul li{
+	padding: 5%;
+}
+
+.fa-compass, .fa-heart-o, .fa-user-o{
+	color: black;
 }
 
 /*MAIN*/
@@ -83,8 +103,8 @@ main {
 #following {
 	background-color: green;
 	text-align: center;
-	padding: 5px 0 5px 0;
-
+	padding: 7px 0 7px 0;
+	border-radius: 5px;
 }
 
 #following a {
@@ -93,24 +113,25 @@ main {
 
 #profile {
 	float: left;
+	border: 5px solid white;
 }
 
 #profile-row {
 	margin: 0 25px 0 25px;
-	top: 350px;
+	top: 250px;
 	width: 90%;
 	position: absolute;	
 }
 
 #profile-image, #following {
 	width: 180px;
+	
 }
 
 #profile-name {
 	float: left;
 	padding-left: 20px;
 }
-
 #profile-info {
 	padding-top: 100px;
 
