@@ -6,7 +6,9 @@
 	<link rel="icon" type="image/png" href="images/instagram-title.png">
 	<link rel="stylesheet" type="text/css" href="style/style.css">
 	<link rel="stylesheet" href="style/font-awesome.min.css">
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="js/user.js" defer></script>
+	<script type="text/javascript" src="js/service.js" defer></script>
 	<script type="text/javascript" src="js/script.js" defer></script>
 </head>
 <body>
@@ -14,7 +16,8 @@
 		<div class="container">
 			<div id="logo"><a href="#"><img src="images/instagram-logo.jpeg" ></a></div>
 			<div id="search">
-				<input type="text" class="searchInput" placeholder="&#xF002; Search" >
+				<span class="icon"><i class="fa fa-search"></i></span>
+				<input type="searchInput" class="searchInput" placeholder="Search" >
 			</div>
 			<div id="menu">
 				<ul>
@@ -26,7 +29,6 @@
 		</div>
 	</header>
 	<div class="container">
-		
 		<main>
 			<section id="profile-section">
 				<div id="banner-image">
@@ -47,9 +49,18 @@
 						</div>
 						<div id="profile-btn-group">
 							<ul>
-								<li><a href="#">100 Photos</a></li>
-								<li><a href="#">50 following</a></li>
-								<li><a href="#">100 followers</a></li>
+								<li><a href="#">
+									<div class="number">100</div>
+									<div class="items">photos</div>
+								</a></li>
+								<li><a href="#">
+									<div class="number">50</div>
+									<div class="items">following</div>
+								</a></li>
+								<li><a href="#">
+									<div class="number">100</div>
+									<div class="items">followers</div>
+								</a></li>
 							</ul>
 						</div>
 					</div>
