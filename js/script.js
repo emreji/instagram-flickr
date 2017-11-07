@@ -22,7 +22,8 @@ service.getImages(function (data) {
 		images.push(image);
 	}
 
-	displayImages(images)
+	displayImages(images);
+	$("#loader").removeClass("show");
 });
 
 
@@ -32,5 +33,6 @@ function displayImages(images) {
 		var image = images[i];
 		imageHTML += "<li><img src='" + image.url + "'></li>";
 		$("#images-array").html(imageHTML);
+		
 	}
 }
