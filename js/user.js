@@ -1,18 +1,16 @@
 function User(userName, name, emailAddress, password, description) {
 
-	var user = {
-		id: createID(),
-		userName: userName,
-		password: password,
-		emailAddress: emailAddress,
-		name: name,
-		description: description,
-		joinedDate: new Date()
-	}
-
-	return user;
+	this.id = createID();
+	this.userName = userName;
+	this.name = name;
+	this.password = password;
+	this.description = description;
+	this.emailAddress = emailAddress;
+	this.joinedDate = new Date()
 }
 
 function createID() {
 	return 1;
 }
+
+
