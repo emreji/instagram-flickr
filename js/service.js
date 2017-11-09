@@ -10,6 +10,8 @@ service.getImages = function (callBack) {
 	});
 }
 
-function jsonFlickrFeed(data) {
-	self.callBack(data);
+function jsonFlickrFeed(flickJsonResponse) {
+	var flickrParser = new FlickrParser()
+	var images = flickrParser.parse(flickJsonResponse);
+	self.callBack(images);
 }
