@@ -6,12 +6,8 @@
 3. Footer
 */
 
-html{
+* {
 	box-sizing: border-box;
-}
-
-*, *:after, *:before {
-	box-sizing: inherit;
 }
 
 ul li{
@@ -45,12 +41,8 @@ header {
 	position: sticky;
 	width: 100%;
 	top: 0;
-	z-index: 1000;
+	z-index: 1;
 	border-bottom: 1px solid #DBDBDF;
-}
-
-header img{
-	width: 300px;
 }
 
 header input[type=text]{
@@ -128,9 +120,10 @@ main {
 	clear: both;
 }
 
-#banner-image {
+#banner img{
 	width: 100%;
 	z-index: 1;
+	cursor: pointer;
 }
 
 #following {
@@ -151,14 +144,17 @@ main {
 }
 
 #profile-row {
-	top: 200px;
+	top: 19%;
 	width: 100%;
 	position: absolute;	
 }
 
 #profile-image, #following {
 	width: 180px;
-	
+}
+
+#profile-image{
+	cursor: pointer;
 }
 
 #name {
@@ -218,7 +214,7 @@ main {
 
 #content-section {
 	clear: both;
-	background-color: #DEDFE0;
+	background-color: #F8F8F9;
 	padding: 0 0 25px 8px;
 	margin-top: 13%;
 }
@@ -235,6 +231,61 @@ main {
 	height: 100%;
 	border: 5px solid white;
 	object-fit: cover;
+	cursor: pointer;
+}
+
+#photos-row img:hover{
+	opacity: 0.7;
+}
+
+.modal{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content{
+	margin: auto;
+	padding: 5%;
+	display: block;
+	height: 100%;
+	max-width: 80%;
+	overflow: hidden;
+	/*max-width: 700px;*/
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover, .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 

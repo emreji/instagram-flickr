@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Instagram</title>
-	<link rel="icon" type="image/png" href="images/instagram-title.png">
+	<link rel="icon" type="image/png" href="images/icon.png">
 	<link rel="stylesheet" type="text/css" href="style/style.css">
 	<link rel="stylesheet" href="style/font-awesome.min.css">
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
@@ -31,11 +31,12 @@
 			</div>
 		</div>
 	</header>
+
 	<div class="container">
 		<main>
 			<section id="profile-section">
-				<div id="banner-image">
-					<img src="images/banner-image.jpeg" />
+				<div id="banner">
+					<img src="images/banner-image.jpg" id="banner-image" />
 				</div>
 				<div id="profile-row">
 					<div id="profile">
@@ -77,6 +78,11 @@
 					</ul>
 				</div>
 			</section>
+			<div id="myModal" class="modal">
+				<span class="close">&times;</span>
+			  	<img class="modal-content" id="modalImage">
+			  	<div id="caption"></div>
+			</div>
 		</main>
 		<footer>
 			<div id="footer-links">
