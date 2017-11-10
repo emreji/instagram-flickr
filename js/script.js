@@ -1,6 +1,7 @@
 var modal = document.getElementById("myModal");
 var elizabeth = new User("liza_sonny", "Elizabeth Sonny", "lizareji23@gmail.com", "liz@2017", "Software Engineer");
 var images = [];
+var defaultImageKeyword = "flowers";
 
 function displayUserInfo(user) {
 	document.getElementById("user-name").innerHTML = user.userName;
@@ -8,17 +9,18 @@ function displayUserInfo(user) {
 	document.getElementById("description").innerHTML = user.description;
 }
 
-function getUserImages() {
+function renderImages(images) {
+	this.images = images;
+	displayImages(images);
+	$("#loader").removeClass("show");
+}
 
-	service.getImages(function (images) {
-		this.images = images
-		displayImages(images);
-		$("#loader").removeClass("show");
-	});
+function getUserImages() {
+	service.getImages(defaultImageKeyword, renderImages);
 }
 
 function displayImages(images) {
-	var imageHTML = ""
+	var imageHTML = "";
 	for (var i = 0; i < images.length; i++) {
 		var image = images[i];
 		imageHTML += '<li><img src="' + image.url + '" onclick="showModalWithIndex(' + i + ')"></li>';
@@ -59,8 +61,14 @@ function configureModal() {
 	        $("body").css("overflow", "auto");
 	    }
 	}
-
 }
+
+//implement search
+function search() {
+	var keyword = document.getElementById("search-input").value;
+	service.getImages(keyword, renderImages);
+}
+
 
 configureModal();
 showModalWithImageId("profile-image");

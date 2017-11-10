@@ -1,8 +1,8 @@
 var service = {}
 
-service.getImages = function (callBack) {
+service.getImages = function (keyword, callBack) {
 	self.callBack = callBack;
-	var apiUrl = 'https://api.flickr.com/services/feeds/photos_public.gne?tags=dog&format=json';
+	var apiUrl = 'https://api.flickr.com/services/feeds/photos_public.gne?tags=' + keyword + '&format=json';
 
 	$.ajax({
 		url: apiUrl,
