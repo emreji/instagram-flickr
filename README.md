@@ -8,7 +8,7 @@ This is part 1 of the series - "Let's build that page", and here is my take on d
 
 #### Technology Stack
 
-User interface is done using html and css (obviously), but also take advantage of [fontawesome](http://fontawesome.io) javascript library to take advantage of the awsome font offerings. Most of the logic is done in vanilla javascript, but also depend on Ajax api's offered by [jQuery](https://jquery.com/).
+User interface is done using html and css (obviously), but also took advantage of [fontawesome](http://fontawesome.io) javascript library to use the awesome font offerings. Most of the logic is done in vanilla javascript, but also is dependent on Ajax api's offered by [jQuery](https://jquery.com/).
 
 #### Architecture
 
