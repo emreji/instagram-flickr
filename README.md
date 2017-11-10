@@ -1,7 +1,3 @@
----
-typora-root-url: ./designs/architecture-diagram.png
----
-
 ### instagram-flickr
 
 ------
@@ -16,7 +12,15 @@ User interface is done using html and css (obviously), but also take advantage o
 
 #### Architecture
 
-![architecture-diagram](../architecture-diagram.png)
+This project uses N-Tier architecture to integrate with Flickr API. The following diagram represents the architecture:
+
+
+
+![architecture-diagram](https://github.com/lizasonny/instagram-flickr/blob/master/designs/architecture-diagram.png?raw=true)
+
+​				Fig: instagram-flickr architecture diagram
+
+
 
 #### Features
 
@@ -35,6 +39,6 @@ User interface is done using html and css (obviously), but also take advantage o
 
 
 
+#### Feedback
 
-
-
+Got feedback? Just create a new ticket under <u>Issues</u> section to start the conversation.
