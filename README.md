@@ -1,6 +1,7 @@
 ### instagram-flickr
 
 ------
+Go to the site - http://emreji.com/instagram/?i=1 to see the project hosted.
 
 #### Synopsis
 
